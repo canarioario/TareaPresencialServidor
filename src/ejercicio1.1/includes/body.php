@@ -4,26 +4,21 @@
 
     <div class="centrar">	
         <div class="container cuerpo text-center">	
-          <h2> Ejercicio 1</h2>
+          <h2> Introduzca los coeficientes del polinomio de segundo grado</h2>
         </div>
         <div class="container">
-            <form  action="valform.php" method="POST" enctype="multipart/form-data">
+            <form  action="polinomio.php" method="POST" enctype="multipart/form-data">
 
-              <label for="name">Nombre:
-                     <input type="text" name="name" class="form-control" /> 
+              <label for="num1">Ingrese el coeficiente de la variable cuadrática:
+                     <input type="number" name="num1" class="form-control" /> 
               </label>
               <br/>
-              <label for="surname"> Apellidos:
-                     <input type="text" name="surname" class="form-control" /> 
+              <label for="num2">Ingrese el coeficiente de la variable lineal:
+                     <input type="number" name="num2" class="form-control" /> 
               </label>
               <br/>
-              <label for="email">Correo:
-                     <input type="email" name="email" class="form-control" /> 
-              </label>
-              <br/>
-
-              <label for="password">Contraseña:
-                      <input type="password" name="password" class="form-control" />
+              <label for="num3">Ingrese el término independiente:
+                     <input type="number" name="num3" class="form-control" /> 
               </label>
               <br/>
 

@@ -1,5 +1,4 @@
 <?php /*
-1. Scripts PHP
 ● Ejercicio 1.1. Se desea implementar una página que nos permita calcular la
 raíz cuadrada de un polinomio de segundo grado. Para ello, implemente una
 página que contenga un formulario con tres cajas de texto , donde se
@@ -14,9 +13,6 @@ Notas:
 ● Utilizar Bootstrap como hoja de estilos para nuestra página.
 ● El envío de los datos del formulario se realizará mediante el método POST
 ● Deberá verificar la correcta recepción de los distintos parámetros POST
-(recepción, tipo de valor recibido, etc)
-
-
 */ ?>
 <?php require_once 'includes/header.php'; ?>
 <html>
