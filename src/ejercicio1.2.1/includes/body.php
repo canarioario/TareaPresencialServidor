@@ -20,11 +20,11 @@
 
             <label for="nif">NIF:
               <input type="text" class="form-control" name="nif" placeholder="Introduzca su NIF" maxlength="9"
-               pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra" required />      
+               pattern="[0-9]{8}[A-Za-z]{1}" title="Debe poner 8 números y una letra"  />      
               </label>
               <br/>
               <label for="name">Nombre:
-                     <input type="text" name="name" placeholder="Introduzca su nombre" class="form-control" required/> 
+                     <input type="text" name="name" placeholder="Introduzca su nombre" class="form-control" /> 
               </label>
               <br/>
               <label for="surname"> Apellidos:
@@ -32,16 +32,16 @@
               </label>
               <br/>
               <label for="fecha">Fecha de nacimiento:
-              <input type="date" class="form-control" name="fecha" max="2021-11-02" required />
+              <input type="date" class="form-control" name="fecha" max="2021-11-02"  />
               </label>
               <br/>
               <label for="email">Correo:
-                     <input type="email" name="email" placeholder="Introduzca su correo" class="form-control" required/> 
+                     <input type="email" name="email" placeholder="Introduzca su correo" class="form-control" /> 
               </label>
               <br/>
 
               <label for="password">Contraseña:
-                      <input type="password" name="password" placeholder="Introduzca su contraseña" class="form-control" required/>
+                      <input type="password" name="password" placeholder="Introduzca su contraseña" class="form-control" />
               </label>
               <br/>
 

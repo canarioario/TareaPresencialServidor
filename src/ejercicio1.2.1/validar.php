@@ -5,67 +5,6 @@
  */
 // Alternativa para detectar el envío de un formulario: if($_SERVER['REQUEST_METHOD']=='POST')
 // Se recomienda el control del botón cuando existan más de un formulario
-if (isset($_POST["submit"]))
-{
-    if (!empty($_POST["nif"]) && (!preg_match("/^[ABCDEFGHJNPQRSUVW]{1}/", $_POST["nif"])))
-    {
-        $nif = trim($_POST["nif"]);
-        $nif = filter_var($nif, FILTER_SANITIZE_STRING);
-        echo "NIF:" . $nif . "<br/>";
-    }
-    else
-    {
-        echo "El NIF no cumple con los parametros</br>";
-    }
-    if (!empty($_POST["name"]) && (!preg_match("/[0-9]/", $_POST["name"])) && (strlen($_POST["name"]) < 15))
-    {
-        $nombre = trim($_POST["name"]);
-        $nombre = filter_var($nombre, FILTER_SANITIZE_STRING);
-        echo "Nombre:" . $nombre . "<br/>";
-    }
-    else
-    {
-        echo "El nombre no cumple con los parametros</br>";
-    }
-
-    if (!empty($_POST["surname"]) && (!preg_match("/[0-9]/", $_POST["surname"])) && (strlen($_POST["surname"]) < 20)) {
-      $apellidos = trim($_POST["surname"]);
-      $apellidos = filter_var($apellidos, FILTER_SANITIZE_STRING);
-        echo "Apellidos:" . $apellidos . "<br/>";
-    }
-    else
-    {
-        echo "Los Apellidos no cumple con los parametros</br>";
-    }
-
-    if (!empty($_POST["email"]))
-    {
-        $correo = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
-        if (filter_var($correo, FILTER_VALIDATE_EMAIL))
-        {
-            echo "email:" . $correo . "<br/>";
-        }
-    }
-    else
-    {
-        echo "El correo no cumple con los parametros</br>";
-    }
-
-    if (!empty($_POST['fecha']));
-    {
-        $fecha = ($_POST['fecha']);
-        echo"Fecha:" . $fecha . "<br/>";
-    }
-
-    if (!empty($_POST["password"]) && (strlen($_POST["password"]) > 6) && (strlen($_POST["password"]) < 10))
-    {
-        echo "Contraseña:" . sha1($_POST["password"]) . "<br/>";
-    }
-    else
-    {
-        echo "la contraseña no cumple con los parametros</br>";
-    }
-
-}
+echo "DATOS RECIBIDOS. </br>  EN EL SIGUIENTE EJERCICIO SE VALIDARAN";
 echo "<p><a href='index.php'>Haz clic aquí para volver al formulario</a></p>";
 ?>
