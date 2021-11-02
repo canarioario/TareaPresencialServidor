@@ -13,7 +13,7 @@
                      <input type="number" name="num1" class="form-control" /> 
               </label>
               <br/>
-              <label for="num2">Ingrese el coeficiente de la variable lineal:
+              <label for="num2">Ingrese el coeficiente de la variable lineal: 
                      <input type="number" name="num2" class="form-control" /> 
               </label>
               <br/>
