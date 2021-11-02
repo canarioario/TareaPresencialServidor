@@ -15,7 +15,7 @@ if (isset($_POST["submit"]))
     }
     else
     {
-        echo "El NIF no cumple con los parametros</br>";
+        echo "El NIF no cumple con los parametros o esta vacio</br>";
     }
     if (!empty($_POST["name"]) && (!preg_match("/[0-9]/", $_POST["name"])) && (strlen($_POST["name"]) < 15))
     {
@@ -25,7 +25,7 @@ if (isset($_POST["submit"]))
     }
     else
     {
-        echo "El nombre no cumple con los parametros</br>";
+        echo "El nombre no cumple con los parametros o esta vacio</br>";
     }
 
     if (!empty($_POST["surname"]) && (!preg_match("/[0-9]/", $_POST["surname"])) && (strlen($_POST["surname"]) < 20)) {
@@ -35,7 +35,7 @@ if (isset($_POST["submit"]))
     }
     else
     {
-        echo "Los Apellidos no cumple con los parametros</br>";
+        echo "Los Apellidos no cumple con los parametros o esta vacio</br>";
     }
 
     if (!empty($_POST["email"]))
@@ -48,13 +48,16 @@ if (isset($_POST["submit"]))
     }
     else
     {
-        echo "El correo no cumple con los parametros</br>";
+        echo "El correo no cumple con los parametros o esta vacio</br>";
     }
 
-    if (!empty($_POST['fecha']));
+    if (!empty($_POST['fecha']))
     {
         $fecha = ($_POST['fecha']);
         echo"Fecha:" . $fecha . "<br/>";
+    }   else
+    {
+        echo "La fecha no cumple con los parametros o esta vacia</br>";
     }
 
     if (!empty($_POST["password"]) && (strlen($_POST["password"]) > 6) && (strlen($_POST["password"]) < 10))
@@ -63,7 +66,7 @@ if (isset($_POST["submit"]))
     }
     else
     {
-        echo "la contraseña no cumple con los parametros</br>";
+        echo "la contraseña no cumple con los parametros o esta vacia</br>";
     }
 
 }
